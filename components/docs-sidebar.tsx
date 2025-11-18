@@ -1,35 +1,8 @@
 'use client'
 
 import { cn } from '@/lib/utils'
-import { BookOpen, Zap, Code, Rocket, Shield, Settings } from 'lucide-react'
 import Link from 'next/link'
-
-const navigation = [
-  {
-    title: 'Getting Started',
-    items: [
-      { title: 'Introduction', href: '#introduction', icon: BookOpen },
-      { title: 'Quick Start', href: '#quick-start', icon: Zap },
-      { title: 'Installation', href: '#installation', icon: Code },
-    ],
-  },
-  {
-    title: 'Core Concepts',
-    items: [
-      { title: 'Architecture', href: '#architecture', icon: Rocket },
-      { title: 'Components', href: '#components', icon: Code },
-      { title: 'API Reference', href: '#api-reference', icon: BookOpen },
-    ],
-  },
-  {
-    title: 'Advanced',
-    items: [
-      { title: 'Security', href: '#security', icon: Shield },
-      { title: 'Configuration', href: '#configuration', icon: Settings },
-      { title: 'Best Practices', href: '#best-practices', icon: Zap },
-    ],
-  },
-]
+import { docsConfig } from '@/lib/docs-config'
 
 interface DocsSidebarProps {
   isOpen: boolean
@@ -62,7 +35,7 @@ export function DocsSidebar({ isOpen, onClose }: DocsSidebarProps) {
           </div>
 
           <nav className="space-y-8 flex-1">
-            {navigation.map((section) => (
+            {docsConfig.map((section) => (
               <div key={section.title}>
                 <h3 className="mb-3 text-xs font-semibold text-muted-foreground uppercase tracking-wider">
                   {section.title}
@@ -77,7 +50,7 @@ export function DocsSidebar({ isOpen, onClose }: DocsSidebarProps) {
                           onClick={onClose}
                           className="flex items-center gap-3 px-3 py-2 rounded-md text-sm text-foreground hover:bg-accent hover:text-accent-foreground hover:shadow-[0_0_15px_rgba(168,85,247,0.3)] transition-all duration-200 group"
                         >
-                          <Icon className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
+                          {Icon && <Icon className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />}
                           {item.title}
                         </Link>
                       </li>

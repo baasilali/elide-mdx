@@ -1,0 +1,46 @@
+# Elide MDX Project Rules
+
+## Documentation Structure
+
+- All documentation content is in `content/docs/` as MDX files
+- Navigation structure is defined in `lib/docs-config.ts`
+- Each doc must have a corresponding entry in the config
+- Use frontmatter for metadata (title, description, date)
+
+## Adding New Documentation
+
+1. Create `.mdx` file in `content/docs/`
+2. Add entry to `lib/docs-config.ts`
+3. Use descriptive slugs (lowercase, hyphenated)
+4. Include proper frontmatter
+
+## React Components in MDX
+
+- All `components/ui/` components are available
+- Import at the top of MDX files
+- Use proper TypeScript types for custom components
+- Test components before using in docs
+
+## Styling Guidelines
+
+- Use Tailwind CSS classes
+- MDX content styled with `.mdx-content` class
+- Maintain dark mode compatibility
+- Follow existing component patterns
+
+## File Organization
+
+- New components go in `components/`
+- UI components in `components/ui/`
+- Utilities in `lib/`
+- MDX files only in `content/docs/`
+- No other documentation formats
+
+## Best Practices
+
+- Keep MDX files focused and concise
+- Use code examples liberally
+- Include working examples, not pseudocode
+- Cross-reference related docs
+- Keep navigation hierarchy clear
+

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///Users/baasilali/workspace/elide-mdx/app/page.tsx"],"sourcesContent":["import { redirect } from 'next/navigation'\n\nexport default function HomePage() {\n  // Redirect to introduction page\n  redirect('/docs/introduction')\n}\n"],"names":[],"mappings":";;;;AAAA;AAAA;;AAEe,SAAS;IACtB,gCAAgC;IAChC,IAAA,gUAAQ,EAAC;AACX"}}]
+}

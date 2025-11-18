@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "1467bfe4d2a4c2af70590d4acb30bcba",
-    "previewModeSigningKey": "8d3f71c5427a9914d836ccb9a0369d8e51e3f9b1e91efa66c5be3318be942592",
-    "previewModeEncryptionKey": "090828087c87e2a839cb2747b569cbd7a94193b68392c15ca54d2df6527dadbb"
-  }
-}
+{"version":4,"routes":{"/docs/api-core":{},"/docs/api-database":{},"/docs/api-server":{},"/docs/architecture":{},"/docs/components":{},"/docs/configuration":{},"/docs/deployment":{},"/docs/installation":{},"/docs/introduction":{},"/docs/javascript":{},"/docs/python":{},"/docs/quick-start":{},"/docs/runtime":{},"/docs/security":{},"/docs/typescript":{}},"dynamicRoutes":{"/docs/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/docs/[slug]","routeRegex":"^\\/docs\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"8c046d3ff86346c3aafa4ce4de219657","previewModeSigningKey":"75782a4dcf3a631a087d376c104d2772c01d1b4cd7f88a25c0333c61875d110d","previewModeEncryptionKey":"10c05e2ca4944a231bb69d57b6a5a39e4658faa4f2297f2c927d2574ee85a003"}}

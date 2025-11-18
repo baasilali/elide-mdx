@@ -1,10 +1,6 @@
-import { DocsLayout } from '@/components/docs-layout'
-import { DocContent } from '@/components/doc-content'
+import { redirect } from 'next/navigation'
 
-export default function DocsPage() {
-  return (
-    <DocsLayout>
-      <DocContent />
-    </DocsLayout>
-  )
+export default function HomePage() {
+  // Redirect to introduction page
+  redirect('/docs/introduction')
 }
